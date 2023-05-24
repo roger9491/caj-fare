@@ -32,7 +32,7 @@ public class FareApplicationService {
 	public JsonNode getFareTable(String type) throws JsonMappingException, JsonProcessingException {
 		// call master-file to validate station ...
 		String stations=restClient.call(stationAPI);
-		log.info(stations);
+		log.info(stations,":");
 		
 		// fetch fare table
 		ObjectMapper mapper = new ObjectMapper();
